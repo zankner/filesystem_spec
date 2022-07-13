@@ -21,10 +21,12 @@ from .registry import (
     registry,
 )
 from .spec import AbstractFileSystem
+from . import asyn
 
 __version__ = _version.get_versions()["version"]
 
 __all__ = [
+    "asyn",
     "AbstractFileSystem",
     "FSTimeoutError",
     "FSMap",
